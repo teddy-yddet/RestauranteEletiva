@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1010382405882",
+    "project_id": "projeto-eletiva-ff4ed",
+    "storage_bucket": "projeto-eletiva-ff4ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010382405882:android:c789ba7b07e92c32328943",
+        "android_client_info": {
+          "package_name": "com.example.atividade0708"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi19Nv-__YeRhxL7JT_jU_1rD87C-4q80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
