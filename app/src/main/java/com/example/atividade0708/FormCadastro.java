@@ -1,8 +1,8 @@
 package com.example.atividade0708;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class FormCadastro extends AppCompatActivity {
 
