@@ -18,6 +18,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.ktx.Firebase;
 
 public class FormCadastro extends AppCompatActivity {
 
@@ -65,6 +67,9 @@ public class FormCadastro extends AppCompatActivity {
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
                     snackbar.show();
+
+                    SalvarDadosUsuario();
+
                 } else {
                     String erro;
                     try {
@@ -88,6 +93,13 @@ public class FormCadastro extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    private void SalvarDadosUsuario() {
+        String nome = edit_nome.getText().toString();
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     }
 
