@@ -39,7 +39,7 @@
     <EditText
         android:id="@+id/edit_email"
         style="@style/Edit_Text"
-        android:hint="Nome"
+        android:hint="E-mail"
         android:inputType="textEmailAddress"
         android:drawableRight="@drawable/ic_email"
         app:layout_constraintTop_toBottomOf="@id/edit_nome"
