@@ -74,8 +74,6 @@ public class FormCadastro extends AppCompatActivity {
                     snackbar.setTextColor(Color.BLACK);
                     snackbar.show();
 
-                    SalvarDadosUsuario();
-
                 } else {
                     String erro;
                     try {
@@ -133,7 +131,6 @@ public class FormCadastro extends AppCompatActivity {
         edit_nome = findViewById(R.id.edit_nome);
         edit_email = findViewById(R.id.edit_email);
         edit_senha = findViewById(R.id.edit_senha);
-
         btn_cadastrar = findViewById(R.id.btn_cadstrar);
     }
 
