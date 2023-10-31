@@ -82,8 +82,10 @@ public class FormCadastro extends AppCompatActivity {
                         erro = "Digite uma senha com, no mínimo,  6 caracteres";
                     } catch (FirebaseAuthUserCollisionException e) {
                         erro = "Essa conta já foi cadastrada!";
+                        limparDados();
                     } catch (FirebaseAuthInvalidCredentialsException e) {
                         erro = "E-mail inválido!";
+                        limparDados();
                     } catch (Exception e) {
                         erro = "Erro ao cadastrar usuário!";
                     }
@@ -115,6 +117,7 @@ public class FormCadastro extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Log.d("db", "Sucesso ao salvar os dados!");
+                        limparDados();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
@@ -124,6 +127,12 @@ public class FormCadastro extends AppCompatActivity {
                     }
                 });
 
+    }
+
+    private void limparDados() {
+        edit_email.setText("");
+        edit_nome.setText("");
+        edit_senha.setText("");
     }
 
     private void IniciarComponentes() {
